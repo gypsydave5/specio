@@ -1,4 +1,4 @@
-IO SPEC
+SPECIO
 =======
 
 A test framework written in [Io](http://iolanguage.org/) as a bit of arning

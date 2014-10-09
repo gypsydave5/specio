@@ -1,9 +1,17 @@
-red := method(sequence,
+redText := method(sequence,
     "[31m" .. sequence ..  "[0m"
 )
 
-green := method(sequence,
+greenText := method(sequence,
     "[32m" .. sequence ..  "[0m"
+)
+
+testPassed := method(sequence,
+    sequence .. " : PASS"
+)
+
+testFailed := method(sequence,
+    sequence .. " : FAIL"
 )
 
 assertEqual := method(description, test, expectation,

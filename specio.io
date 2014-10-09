@@ -1,10 +1,4 @@
-red := method(sequence,
-    "[31m" .. sequence ..  "[0m"
-)
 
-green := method(sequence,
-    "[32m" .. sequence ..  "[0m"
-)
 
 assertEqual := method(description, test, expectation,
     if(test == expectation,

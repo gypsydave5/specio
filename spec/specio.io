@@ -5,6 +5,8 @@ assertEqual := method(description, test, expectation,
     )
 )
 
+
+
 assertTrue := method(description, test
     if(test == true,
     description with(" : PASS") println,
@@ -12,5 +14,15 @@ assertTrue := method(description, test
     )
 )
 
-doFile("lib/fibonacci.io")
-doFile("spec/fibonacci_spec.io")
+specDir := Directory with(Directory currentWorkingDirectory .. "/spec")
+libDir := Directory with(Directory currentWorkingDirectory .. "/lib")
+
+libDir filesWithExtension("io") foreach(file,
+    doFile(file path)
+)
+
+specDir filesWithExtension("io") foreach(file,
+    if (file path containsSeq("_spec.io"),
+        doFile(file path)
+    )
+)

@@ -1,4 +1,3 @@
-
 assertEqual("The first Fibonacci number is 0", fibonacci(1), 0)
 assertEqual("The second Fibonacci number is 1", fibonacci(2), 1)
 assertEqual("The third Fibonacci number is 1", fibonacci(3), 1)

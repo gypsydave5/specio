@@ -16,8 +16,8 @@ testFailed := method(sequence,
 
 assertEqual := method(description, test, expectation,
     if(test == expectation,
-    ("[32m" .. description .. " : PASS" .. "[0m") println,
-    ("[31m" .. description .. " : FAIL[0m\n\tExpected: " .. expectation .. "\n\tBut returned: " .. test ) println
+    (greenText(testPassed(description))) println,
+    (redText(testPassed(description))) println
     )
 )
 

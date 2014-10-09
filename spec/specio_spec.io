@@ -22,7 +22,7 @@ assertEqual("the method testFailed appends FAILED to the end of a sequence",
 
 assertEqual("failing tests are red and have FAIL at the end",
     assertEqual("IGNORE: Testing a failing test", 1 + 1, 1),
-    "[31mIGNORE: Testing a failing test : FAIL[0m\n\tExpected: 1\n\tBut returned: 2"
+    "[31mIGNORE: Testing a failing test : FAIL[0m\n\tExpected : 1\n\tBut returned : 2"
     )
 
 assertEqual("passing tests are green and have PASS at the end",

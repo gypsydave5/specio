@@ -17,7 +17,9 @@ testFailed := method(sequence,
 assertEqual := method(description, test, expectation,
     if(test == expectation,
     (greenText(testPassed(description))) println,
-    (redText(testPassed(description))) println
+    (redText(testFailed(description)) ..
+        "\n\tExpected : " .. expectation ..
+        "\n\tBut returned : " ..  test) println
     )
 )
 

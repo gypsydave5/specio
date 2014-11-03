@@ -1,3 +1,5 @@
+#!/usr/local/bin/io
+
 redText := method(sequence,
     "[31m" .. sequence ..  "[0m"
 )

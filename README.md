@@ -8,7 +8,7 @@ _Spec-io! Spec-io! Spec-I-O!_
 
 ####Overview
 During week 10 at we were introduced to [Io], a dynamic, loosely-typed
-prototypical landuage with much in common with both JavaScript and Ruby.
+prototypical language with much in common with both JavaScript and Ruby.
 
 We were instructed to either generated the Fibonacci
 sequence, or implement the Boris Bikes project, in Io.
